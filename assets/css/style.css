@@ -31,6 +31,7 @@ a {
   text-align: center;
   position: relative;
   z-index: 999;
+  margin-top: 0;
 }
 
 a:hover {
@@ -968,18 +969,19 @@ section {
   align-items: center;
   font-size: x-large;
   justify-content: end;
-  padding-top: -5%;
-  margin-top: 10%;
+  width: 93%;
+  /* top: 8%; */
+  margin-top: 3%;
   /* z-index: -999; */
   position: relative;
 }
 
 .abt-us .content .box {
-  width: 100%;
+  width: 81%;
   height: 393%;
   position: absolute;
-  top: -216px;
-  /* left: 25%; */
+  top: -207px;
+  left: 16%;
   padding-right: 0;
   /* background: #AA9063; */
   padding-left: 0;
@@ -1117,12 +1119,13 @@ p {
 
   }
   .abt-us .content .social-links {
-    margin-bottom: 31%;
-    bottom: 5%;
+    margin-bottom: 38%;
+    width: 100%;
+    bottom: 0;
   }
 .abt-us .content .social-links a{
   margin-left: -250%;
-  /* margin-bottom: -41%; */
+  margin-bottom: 0;
 }
   .abt-us .accordion-list {
     padding-bottom: 30px;
@@ -1138,11 +1141,13 @@ p {
 @media (max-width: 991px) {
   .abt-us .content .box {
     width:90%;
-    height: 53%;
+    /* height: initial; */
+    left: 0;
+    margin-top: 50%;
   }
 
   .abt-us .content .stack-top {
-    margin-left: -31px;
+    margin-left: 0;
   }
   .abt-us .content h3 {
     font-size: 35px;
@@ -2325,6 +2330,7 @@ p {
 #footer {
   font-size: 14px;
   background: black;
+  /* display: -webkit-box; */
 }
 
 #footer .footer-newsletter {
@@ -2383,6 +2389,7 @@ p {
 #footer .footer-top {
   padding: 60px 0 10px 0;
   background: black;
+  position: sticky;
 }
 
 
@@ -2510,7 +2517,7 @@ p {
   /* text-align: center; */
   /* justify-content: center; */
   /* justify-items: center; */
-  float: center;
+  /* float: center; */
 }
 
 #footer .footer-top .footer-links ul {
@@ -2708,14 +2715,15 @@ p {
   /* font-size: 20px; */
   background-color: #009d8b;
   right: 0;
-  margin-left: 71%;
+  margin-left: 100%;
   /* margin-top: -36%; */
   display: inline-block;
 }
 
 @media (max-width: 991px) {
   .owl-carousel .owl-nav {
-    bottom: 16%;
+    bottom: 15%;
+    margin-left: 66%;
   }
 }
 
@@ -2880,8 +2888,8 @@ p {
 }
 
 .work-wrap .img {
-  height: 500px;
-  width: 196%;
+  height: 511px;
+  /* width: 239%; */
   margin-left: 16%;
   /* margin-bottom: 0%; */
 }
@@ -2898,7 +2906,12 @@ p {
 
 @media (max-width: 991.98px) {
   .work-wrap .img {
-    height: 295px;
+    height: 296px;
+    margin-left: 0;
+    width: 90%;
+    /* margin-bottom: 54%; */
+    margin-top: -1%;
+    margin-left: 0;
   }
   .work-wrap .text h2 {
     font-size: 40px;
