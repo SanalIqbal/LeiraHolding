@@ -32,10 +32,36 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-
+  <script>
+  let timeout;
+		function myFunction() {
+		clearTimeout(timeout);
+		var url=window.location.href;
+		let result =  url.endsWith("index.html");
+  //alert(result);
+  if(result){
+	var futureCity = document.getElementById("futureCity");
+	var leiraHoldingIMG = document.getElementById("leiraHoldingIMG");
+	if(futureCity!=undefined){
+		var srcFuture=futureCity.src;
+		//alert(srcFuture);
+		if(futureCity.src.endsWith("assets/img/FutureLeiraCity1.png")){
+		 futureCity.src="assets/img/FutureLeiraCity2.png";
+		}else{
+		 futureCity.src="assets/img/FutureLeiraCity1.png";
+		}
+	
+	}
+	//
+  setTimeout(function() {myFunction()}, 2000);
+  }
+  
+}
+  
+  </script>
 </head>
 
-<body>
+<body onload="myFunction()">
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
@@ -117,12 +143,7 @@
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 acontent d-flex flex-column justify-content-center aos-init aos-animate">
             <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-              et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-              aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+              Welcome to LEIRA HOLDING, a dynamic and forward-thinking company that specializes in building mega projects with a focus on the future. As a relatively new player in the industry, LEIRA HOLDING pursues strategic, sustainable, and economically feasible investments in vital and promising sectors, as well as viable long-term projects, with the goal of creating a clear and sustainable socioeconomic impact and aligning its objectives with the global strategic investment direction.
             </p>
             <!-- <a href="#" class="btn-learn-more">Learn More</a> -->
           </div>
@@ -142,17 +163,12 @@
         <!-- Future Leira City -->
         <div class="row content justify-content-center">
           <div class="col-lg-6">
-            <img src="assets/img/future_city.png" class="img-fluid" alt="">
+            <img src="assets/img/FutureLeiraCity1.png" id="futureCity" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 justify-content-center">
             <h3>Future Leira City</h3>
             <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-              et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-              aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+              Future Leira City is our mega residential project. It is a smart environmentally-conscious city that promotes sustainability, conservation efforts, and investments in renewable energy sources. We also aspire to provide high-tech services to all the units covered, in addition to providing magnificent residences and communities with all the facilities and services that you need to have a world-class living experience.
             </p>
             <div class="row content justify-content-center">
               <!-- <div class="col-lg-6 pt-4 pt-lg-0"> -->
@@ -171,19 +187,16 @@
 
             <h3>Maufacturing</h3>
             <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-              et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-              aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+              One of our interesting projects is the green cement factory combines extensive first-hand knowledge of cement manufacturing with commitment to sustainability and innovation. We have a long experience in using alternative raw materials and innovative production methods that reduce carbon footprint and negative environmental impact.
+As an industry leader in the manufacturing of green cement in the Middle East, we prioritize sustainability in all aspects of our operations; from the raw materials we use to the design and construction of our buildings.
+By embracing sustainability and innovation, we are working to create more safe and green future for everyone.
             </p>
             <div class="row content justify-content-center">
               <a href="#" class="btn-learn-more">Find More</a>
             </div>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
-            <img src="assets/img/manufacturing.png" class="img-fluid" alt="">
+            <img src="assets/img/Manufacturing - Green Cement.bmp" class="img-fluid" alt="">
           </div>
 
         </div>
@@ -192,17 +205,16 @@
 
         <div class="row content">
           <div class="col-lg-6">
-            <img src="assets/img/agriculture.png" class="img-fluid" alt="">
+            <img src="assets/img/Agriculture - Vertical Farm.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 justify-content-center">
             <h3>Agriculture</h3>
             <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-              et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-              aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+              LEIRA HOLDING leverages cutting-edge technology as well as agricultural know-how to develop plants in an environment fully under our control. We are the first to introduce the concept of the highest vertical farm tower using the latest technology and scientific knowledge.
+We deploy sophisticated technologies that have been customized for our vertical farm. We provide the most immaculate and hygienic items, all of which are pesticide-free, have a long shelf life and derive their flavor from the same source. Mother Nature's pattern is something we stick to.
+In addition, we use state-of-the-art sensors and data analytics to monitor and optimize every phase of the growing process, ensuring that our crops are healthy and nutritious.
+By building the highest vertical farm tower, we are trying to maximize the volume of the produce we can grow in a small space, making it an efficient and sustainable solution for feeding a growing population.
+Our innovative approach is set to revolutionize the way we think about agriculture and its production.
             </p>
             <div class="row content justify-content-center">
               <!-- <div class="col-lg-6 pt-4 pt-lg-0"> -->
@@ -220,19 +232,16 @@
 
             <h3>Finance</h3>
             <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-              et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-              aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+              LIERACOIN is an Arab cryptocurrency that is gaining popularity in the Middle East as a trusted and reliable digital currency option. The coin is supported by number of mega projects and success plans, which have helped to establish it as a reliable and trustworthy choice for investors and users in the region.
+With a strong focus on security and transparency, LIERACOIN has quickly become a go-to choice for those looking to participate in the growing crypto market in the Middle East.
+Whether you are seasoned investors or new to the world of cryptocurrency, LIERACOIN is a the ideal option to consider.
             </p>
             <div class="row content justify-content-center">
               <a href="#" class="btn-learn-more">Find More</a>
             </div>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
-            <img src="assets/img/finance.png" class="img-fluid" alt="">
+            <img src="assets/img/Finance-Leira Coin.jpg" class="img-fluid" alt="">
           </div>
 
         </div>
@@ -343,12 +352,10 @@
             </div>
           </div>
         </div>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-          clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-          consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-          takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <p>Our focus is on developing a smart green community, that is supported by high-tech and sustainable industries. We plan for an economic development that satisfies today's requirements without jeopardizing future generations' ability to do the same.
+We are confident that the natural environment and all of its resources will be important components of our future social and economic structures.
+One of the key strengths of LEIRA Holding is its ability to bring together a diverse team of experts, including architects, engineers, and construction professionals, to work on each project. This ensures that each project is completed to the highest standards, and that it meets the needs of the community it serves.
+Thank you for considering LEIRA HOLDING for your next project. </p>
       </div>
 
       </div>
